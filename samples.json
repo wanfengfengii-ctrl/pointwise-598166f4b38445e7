@@ -1,0 +1,12 @@
+{
+  "key": "station-7",
+  "transactions": [
+    {"seq":1,"request":"start","changes":[{"side":"L","id":"l1","rev":1,"start":0,"end":10,"value":{"reading":9},"deleted":false},{"side":"R","id":"r1","rev":1,"start":5,"end":15,"value":{"quality":"ok"},"deleted":false}]},
+    {"seq":2,"request":"extend","changes":[{"side":"L","id":"l2","rev":1,"start":20,"end":30,"value":{"reading":8},"deleted":false},{"side":"R","id":"r2","rev":1,"start":25,"end":35,"value":{"quality":"ok"},"deleted":false}]},
+    {"seq":3,"request":"move","changes":[{"side":"R","id":"r1","rev":2,"start":22,"end":27,"value":{"quality":"revised"},"deleted":false}]},
+    {"seq":4,"request":"retract","changes":[{"side":"R","id":"r2","rev":2,"start":25,"end":35,"value":{"quality":"ok"},"deleted":true}]},
+    {"seq":5,"request":"joint","changes":[{"side":"L","id":"l2","rev":2,"start":40,"end":50,"value":{"reading":8},"deleted":false},{"side":"R","id":"r1","rev":3,"start":45,"end":55,"value":{"quality":"revised"},"deleted":false}]},
+    {"seq":6,"request":"last-match","changes":[{"side":"R","id":"r1","rev":4,"start":45,"end":55,"value":{"quality":"revised"},"deleted":true}]},
+    {"seq":7,"request":"revive","changes":[{"side":"R","id":"r2","rev":3,"start":42,"end":48,"value":{"quality":"back"},"deleted":false}]}
+  ]
+}
